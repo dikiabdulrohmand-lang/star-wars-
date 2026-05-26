@@ -1,0 +1,6 @@
+{
+  "name": "Star Savior Chronicles",
+  "description": "An immersive retro turn-based RPG with deep pixel art character customization, branching storylines, and strategic cosmic combat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

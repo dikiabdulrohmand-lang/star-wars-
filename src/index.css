@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #09090b;
+    color: #fafafa;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  /* Custom Scrollbars and Glowing UI elements */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #09090b;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #27272a;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #06b6d4;
+  }
+}
+
+/* Glowing aesthetic animation utilities */
+@keyframes pulse-cyan {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+  }
+  50% {
+    opacity: .7;
+    box-shadow: 0 0 16px rgba(6, 182, 212, 0.8);
+  }
+}
+
+.glow-cyan {
+  animation: pulse-cyan 3s infinite;
+}
